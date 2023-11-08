@@ -1,0 +1,149 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2F4F4F;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container, .result-container {
+    background-color: #696969;
+    border: 1px solid #000;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.result-container {
+  margin-left: 50px;  
+}
+
+h1 {
+    text-align: center;
+    margin: 0 0 20px;
+    color: #191970;
+}
+
+label, textarea, input, button {
+    display: block;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+
+
+textarea {
+    height: 100px;
+    padding: 10px;
+    margin-right: 100px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #00008B;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Additional styles for the entire page */
+html {
+    font-size: 16px;
+}
+
+.container {
+    background-color: #2F4F4F;;
+}
+
+body {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.form-container {
+    margin-top: 20px;
+}
+
+/* Styling for input fields */
+input[type="text"],
+textarea {
+    padding: 2px;
+    border: 1px #ccc;
+    border-radius: 5px;
+    background-color: #a9a9a9;
+}
+
+/* Styling for input placeholders */
+input::placeholder,
+textarea::placeholder {
+    color: #fff;
+}
+
+#redactWords {
+    height: 30px;
+    padding: 5px;
+}
+
+#replacementChar {
+    height: 30px;
+    padding: 5px;
+}
+
+/* Styling for textarea in result container */
+.result-container textarea {
+    background-color: #a9a9a9;
+    border: 1px solid #eee;
+    resize: none;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+    button {
+        padding: 12px 30px;
+        font-size: 14px;
+        transition: 850ms;
+    }
+    
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    h1 {
+        font-size: 34px;
+        width: 500px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 600;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        margin-left: 50px;
+    }
+
+    h1 {
+        font-size: 18px;
+        width: 400px;
+        padding: 20px;
+        text-align: center;
+     }
+}
